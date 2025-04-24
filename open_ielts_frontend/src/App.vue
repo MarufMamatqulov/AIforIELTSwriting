@@ -115,7 +115,7 @@ export default {
       this.loading = true
       try {
         // Adjust the URL to match your backend (127.0.0.1 vs. localhost)
-        const response = await axios.post('http://127.0.0.1:8000/api/submit-writing/', this.form)
+        const response = await axios.post('http://13.53.216.88:8000/api/submit-writing/', this.form)
         this.result = response.data
       } catch (err) {
         this.error = 'Error submitting writing. Please try again.'
